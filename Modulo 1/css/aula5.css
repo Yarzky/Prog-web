@@ -1,0 +1,140 @@
+/* ============================================
+   CONTEÚDO DA AULA 4 (base)
+   ============================================ */
+
+/* 1. Definir uma fonte com font-family */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* 2. Alterar cores dos títulos e links */
+h1, h2 {
+    color: #2c3e50;
+}
+
+a {
+    color: #1a73e8;
+}
+
+/* 3. Adicionar padding e margin */
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* 4. Estilizar a tabela com bordas e cores alternadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf2ff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* 5. Criar um efeito :hover nos links */
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* ============================================
+   AULA 5 — Layout com Box Model e Position
+   ============================================ */
+
+/* 1. box-sizing: border-box em todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Header fixo no topo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    z-index: 100;
+}
+
+header h1 {
+    color: white;
+    margin: 0 0 8px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 5. display: inline-block para colocar itens do nav lado a lado */
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #a8d8ff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Compensar o header fixo */
+body {
+    padding-top: 90px;
+}
+
+/* 3. Cards com padding interno, border + border-radius e margin entre eles */
+section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* 4. Centralizar o contêiner principal com margin: 0 auto */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
