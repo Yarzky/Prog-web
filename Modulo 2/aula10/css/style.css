@@ -1,0 +1,282 @@
+/* === Rose Pine Moon Palette ===
+   --base:          #232136
+   --surface:       #2a273f
+   --overlay:       #393552
+   --muted:         #6e6a86
+   --subtle:        #908caa
+   --text:          #e0def4
+   --love:          #eb6f92
+   --gold:          #f6c177
+   --rose:          #ea9a97
+   --pine:          #3e8fb0
+   --foam:          #9ccfd8
+   --iris:          #c4a7e7
+   --highlightLow:  #2a283e
+   --highlightMed:  #44415a
+   --highlightHigh: #56526e
+   melhor paletta de cor
+================================ */
+
+:root {
+    --base: #232136;
+    --surface: #2a273f;
+    --overlay: #393552;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --love: #eb6f92;
+    --gold: #f6c177;
+    --rose: #ea9a97;
+    --pine: #3e8fb0;
+    --foam: #9ccfd8;
+    --iris: #c4a7e7;
+    --highlightLow: #2a283e;
+    --highlightMed: #44415a;
+    --highlightHigh: #56526e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--base);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    animation: fade-in 0.6s ease both;
+}
+
+h1,
+h2 {
+    color: var(--iris);
+}
+
+a {
+    color: var(--foam);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--iris);
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--overlay);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--iris);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--foam);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+/* --- Main --- */
+main {
+    flex: 1;
+    padding: 25px 30px;
+}
+
+/* --- Seção Sobre --- */
+section#sobre {
+    margin-bottom: 24px;
+    animation: fade-in 0.8s ease 0.2s both;
+}
+
+section#sobre h2 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+section#sobre p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: var(--subtle);
+}
+
+section#sobre figure img {
+    border-radius: 8px;
+    border: 3px solid var(--pine);
+    max-width: 200px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+section#sobre figure img:hover {
+    border-color: var(--iris);
+    transform: scale(1.03);
+}
+
+/* --- Tabela --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+thead {
+    background-color: var(--overlay);
+    color: var(--text);
+}
+
+th,
+td {
+    border: 1px solid var(--highlightMed);
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--highlightLow);
+    color: var(--text);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+tbody tr:hover {
+    background-color: var(--highlightMed);
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+ol li {
+    background-color: var(--surface);
+    border: 1px solid var(--highlightMed);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+ol li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(196, 167, 231, 0.25);
+    border-color: var(--iris);
+}
+
+ol li a {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: var(--pine);
+    color: var(--base);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(62, 143, 176, 0.35);
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--foam);
+    box-shadow: 0 4px 14px rgba(156, 207, 216, 0.4);
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 4px rgba(62, 143, 176, 0.2);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--overlay);
+    color: var(--subtle);
+    text-align: center;
+    padding: 20px 30px;
+    animation: fade-in 0.8s ease 0.4s both;
+}
+
+footer a {
+    color: var(--foam);
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--iris);
+    text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,17 +1,55 @@
+/* === Rose Pine Moon Palette ===
+   --base:          #232136
+   --surface:       #2a273f
+   --overlay:       #393552
+   --muted:         #6e6a86
+   --subtle:        #908caa
+   --text:          #e0def4
+   --love:          #eb6f92
+   --gold:          #f6c177
+   --rose:          #ea9a97
+   --pine:          #3e8fb0
+   --foam:          #9ccfd8
+   --iris:          #c4a7e7
+   --highlightLow:  #2a283e
+   --highlightMed:  #44415a
+   --highlightHigh: #56526e
+================================ */
+
+:root {
+    --base:          #232136;
+    --surface:       #2a273f;
+    --overlay:       #393552;
+    --muted:         #6e6a86;
+    --subtle:        #908caa;
+    --text:          #e0def4;
+    --love:          #eb6f92;
+    --gold:          #f6c177;
+    --rose:          #ea9a97;
+    --pine:          #3e8fb0;
+    --foam:          #9ccfd8;
+    --iris:          #c4a7e7;
+    --highlightLow:  #2a283e;
+    --highlightMed:  #44415a;
+    --highlightHigh: #56526e;
+}
+
 /* 1. Definir uma fonte com font-family */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
     margin: 0;
+    background-color: var(--base);
+    color: var(--text);
 }
 
 /* 2. Alterar cores dos títulos e links */
 h1, h2 {
-    color: #2c3e50;
+    color: var(--iris);
 }
 
 a {
-    color: #1a73e8;
+    color: var(--foam);
 }
 
 /* 3. Adicionar padding e margin */
@@ -33,6 +71,7 @@ section {
 footer {
     padding: 15px;
     margin-top: 20px;
+    color: var(--subtle);
 }
 
 /* 4. Estilizar a tabela com bordas e cores alternadas */
@@ -43,26 +82,26 @@ table {
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid var(--highlightMed);
     padding: 10px;
     text-align: left;
 }
 
 thead {
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--overlay);
+    color: var(--text);
 }
 
 tbody tr:nth-child(even) {
-    background-color: #eaf2ff;
+    background-color: var(--highlightLow);
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: var(--surface);
 }
 
 /* 5. Criar um efeito :hover nos links */
 a:hover {
-    color: #0d47a1;
+    color: var(--iris);
     text-decoration: underline;
 }

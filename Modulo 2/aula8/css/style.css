@@ -1,0 +1,215 @@
+/* === Rose Pine Moon Palette ===
+   --base:          #232136
+   --surface:       #2a273f
+   --overlay:       #393552
+   --muted:         #6e6a86
+   --subtle:        #908caa
+   --text:          #e0def4
+   --love:          #eb6f92
+   --gold:          #f6c177
+   --rose:          #ea9a97
+   --pine:          #3e8fb0
+   --foam:          #9ccfd8
+   --iris:          #c4a7e7
+   --highlightLow:  #2a283e
+   --highlightMed:  #44415a
+   --highlightHigh: #56526e
+   melhor paletta de cor
+================================ */
+
+:root {
+    --base: #232136;
+    --surface: #2a273f;
+    --overlay: #393552;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --love: #eb6f92;
+    --gold: #f6c177;
+    --rose: #ea9a97;
+    --pine: #3e8fb0;
+    --foam: #9ccfd8;
+    --iris: #c4a7e7;
+    --highlightLow: #2a283e;
+    --highlightMed: #44415a;
+    --highlightHigh: #56526e;
+}
+
+/* Reset base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--base);
+    color: var(--text);
+
+    display: grid;
+    grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    min-height: 100vh;
+}
+
+a {
+    color: var(--foam);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--iris);
+    text-decoration: underline;
+}
+
+/* header */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--overlay);
+    padding: 15px 30px;
+}
+
+header h1 {
+    color: var(--iris);
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--foam);
+}
+
+section#sobre {
+    grid-area: sidebar;
+    background-color: var(--surface);
+    border-right: 2px solid var(--highlightMed);
+    padding: 20px;
+}
+
+section#sobre h2 {
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+section#sobre p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--subtle);
+    margin-bottom: 15px;
+}
+
+section#sobre figure img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+    border: 3px solid var(--pine);
+    display: block;
+}
+
+/* main — 1fr */
+main {
+    grid-area: main;
+    padding: 25px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+thead {
+    background-color: var(--overlay);
+    color: var(--text);
+}
+
+th,
+td {
+    border: 1px solid var(--highlightMed);
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--highlightLow);
+    color: var(--text);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+ol li {
+    display: grid;
+    place-items: center;
+    background-color: var(--surface);
+    border: 1px solid var(--highlightMed);
+    border-radius: 8px;
+    padding: 20px 16px;
+    min-height: 80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+ol li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(196, 167, 231, 0.2);
+    border-color: var(--iris);
+}
+
+ol li a {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    background-color: var(--overlay);
+    color: var(--subtle);
+    text-align: center;
+    padding: 20px 30px;
+}
+
+footer a {
+    color: var(--foam);
+}
+
+footer a:hover {
+    color: var(--iris);
+    text-decoration: none;
+}
