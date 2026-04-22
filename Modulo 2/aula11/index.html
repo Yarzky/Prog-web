@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio pessoal de Yarzky — Desenvolvedor Web Full Stack. Projetos, habilidades e contato.">
+    <title>Yarzky | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="topo">
+        <nav>
+            <a href="#topo" class="logo">Yarzky</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Olá, eu sou <span class="destaque">Matheus</span></h1>
+            <p class="hero-subtitulo">Desenvolvedor</p>
+            <p class="hero-descricao">
+                Desenvolvendo soluções com código limpo e design intuitivo.
+            </p>
+            <a href="#contato" class="btn-cta">Entre em contato</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <article class="sobre-conteudo">
+                <figure class="sobre-foto">
+                    <img src="img/foto.jpg" alt="Foto de perfil de Matheus">
+                    <figcaption>Matheus</figcaption>
+                </figure>
+                <aside class="sobre-bio">
+                    <p>
+                        Sou um desenvolvedor e estudante de Análise e Desenvolvimento de Sistemas, também conhecido
+                        como Yarzky, apaixonado por tecnologia.
+                    </p>
+                    <p>
+                        Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.
+                        Quando não estou codando, gosto de jogar, fazer modding e contribuir com projetos open-source.
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="projetos">
+            <h2>Galeria de projetos</h2>
+            <section class="projetos-grid">
+                <article class="projeto-card">
+                    <figure>
+                        <a href="https://github.com/Yarzky/PCSCDI" target="_blank" rel="noopener">
+                            <img src="img/CrtlEstoque.png" alt="Screenshot do projeto Controle de Estoque"></a>
+                        <figcaption>Interface do Controle de Estoque</figcaption>
+                    </figure>
+                    <p>
+                        Um simples controle de estoque desenvolvido em C# com interface gráfica usando AvaloniaUI.
+                    </p>
+                </article>
+
+                <article class="projeto-card">
+                    <figure>
+                        <a href="https://github.com/Yarzky/ProjetoFinalPOO" target="_blank" rel="noopener"><img
+                                src="img/Biblioteca.png" alt="Screenshot do projeto Controle de Livros"></a>
+                        <figcaption>Interface do Controle de Livros</figcaption>
+                    </figure>
+                    <p>
+                        Uma API desenvolvida em Java com arquitetura MVC usando Spring REST para controle de
+                        biblioteca pessoal, com interface em HTML, CSS e JavaScript.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades / Tecnologias</h2>
+            <ul class="skills">
+                <li class="skill-tag">HTML</li>
+                <li class="skill-tag">CSS</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">C#</li>
+                <li class="skill-tag">Java</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p class="contato-descricao">
+                Tem um projeto em mente ou quer trocar uma ideia? Preencha o formulário abaixo!
+            </p>
+            <form class="form-contato" action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."
+                    required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-links" aria-label="Redes sociais">
+            <ul>
+                <li><a href="https://github.com/Yarzky" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </nav>
+        <address>
+            <a href="mailto:mahenriqueribeiro@hotmail.com">Contato</a>
+        </address>
+        <p class="creditos">&copy; 2026 Yarzky. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
