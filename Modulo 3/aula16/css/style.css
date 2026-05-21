@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.poke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.poke label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.poke input {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.poke button {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

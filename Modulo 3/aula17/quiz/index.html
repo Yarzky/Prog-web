@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz JS</title>
+  <link rel="stylesheet"
+    href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="inicio">
+      <h1>Quiz JavaScript</h1>
+      <div id="config-container">
+        <label for="category">Categoria:</label>
+        <select id="category">
+          <option value="any">Qualquer Categoria</option>
+          <option value="9">Conhecimentos Gerais</option>
+          <option value="11">Filmes</option>
+          <option value="17">Ciência & Natureza</option>
+          <option value="21">Esportes</option>
+          <option value="22">Geografia</option>
+          <option value="23">História</option>
+        </select>
+
+        <label for="difficulty">Dificuldade:</label>
+        <select id="difficulty">
+          <option value="any">Qualquer Dificuldade</option>
+          <option value="easy">Fácil</option>
+          <option value="medium">Médio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+      <p id="high-score-display">Recorde: --</p>
+      <button id="btnIniciar">
+        Iniciar
+      </button>
+      <button id="btnToggleTheme">Trocar Tema</button>
+    </div>
+    <div id="quiz" hidden>
+      <div id="quiz-header">
+        <div id="timer-display">Tempo: 20s</div>
+        <div id="progresso-container">
+            <div id="progresso-bar"></div>
+        </div>
+        <div id="progresso-text"></div>
+      </div>
+      <div id="pergunta-container">
+          <h2 id="pergunta"></h2>
+          <div id="opcoes"></div>
+      </div>
+    </div>
+    <div id="resultado" hidden>
+       <!-- Content will be injected by JS -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
