@@ -1,4 +1,5 @@
 node_modules/
+.env
 .gemini/
 docs/
 settings.json
